@@ -1,42 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Poppins', sans-serif;
-    box-sizing: border-box;
-}
 :root{
     
-    --primary-color: #e5e5e5;
-    --secondary-color: rgb(255, 252, 252);
-    --primary-font: #3E6680;
-    --border-radius: 10px;
-    --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --primary-color: #8c52ff;
+  --secondary-color: rgb(255, 252, 252);
+  --primary-font: #3E6680;
+  --border-radius: 15px;
+  --box-shadow:rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
 }
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-    padding: 1rem 2rem;
-    box-shadow: var(--box-shadow);
-    
-  }
-  
-  
-  .nav-links {
-    display: flex;
-    gap: 5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #4b5563;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  .nav-links a:hover {
-    color: #2563eb;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 200px;
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+
+.nav-links {
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.weather-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  margin-left: 2rem; 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
