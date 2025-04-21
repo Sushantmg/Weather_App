@@ -7,13 +7,38 @@
     <link rel="stylesheet" href="../login/login.css">
 </head>
 <body>   
+  <div class="container">
     <div class="navbar">
-    <div class="nav-links">
-      <a href="../home/index.html">HOME</a>
-      <a href="../login/login.html">LOGIN</a>
-      <a href="../contact/contact.html">CONTACT</a>
-    </div>
+    <ul class="nav-items">
+      <li><a href="../home/index.html">HOME</a></li>
+      <li><a href="../login/login.html">LOGIN</a></li>
+      <li><a href="../contact/contact.html">CONTACT</a></li>
+    </ul>
   </div>
+
+  <section class="form-section">
+    <div id="login">
+      LOGIN
+    </div>
+    
+    <div>
+      <label for="username">Username
+        <input id="username" type="text">
+      </label>
+    </div>
+    <div>
+      <label for="email">Email
+        <input id="email" type="text">
+      </label>
+    </div>
+    <div>
+      <label for="password">Password
+        <input id="password" type="password">
+      </label>
+    </div>
+    <span id="error-div"></span>
+    <input onclick="formsubmit()" type="submit" value="Submit">
+  </section>
 
 
     <script src="../login/login.js"></script>

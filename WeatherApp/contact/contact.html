@@ -7,14 +7,43 @@
     <link rel="stylesheet" href="../contact/contact.css">
 </head>
 <body>   
+  <div class="container">
     <div class="navbar">
-    <div class="nav-links">
-      <a href="../home/index.html">HOME</a>
-      <a href="../login/login.html">LOGIN</a>
-      <a href="../contact/contact.html">CONTACT</a>
-    </div>
+    <ul class="nav-items">
+      <li><a href="../home/index.html">HOME</a></li>
+      <li><a href="../login/login.html">LOGIN</a></li>
+      <li><a href="../contact/contact.html">CONTACT</a></li>
+    </ul>
   </div>
 
+  <section class="form-section">
+    <div id="contact">
+      CONTACT
+    </div>
+    
+    <div>
+      <label for="f_name">Name
+        <input id="f_name" type="text">
+      </label>
+    </div>
+    <div>
+      <label for="number">Number
+        <input id="number" type="number">
+      </label>
+    </div>
+    <div>
+      <label for="address">Address
+        <input id="address" type="text">
+      </label>
+    </div>
+    <div>
+      <label for="age">Age
+        <input id="age" type="number">
+      </label>
+    </div>
+    <span id="error-div"></span>
+    <input onclick="formsubmit()" type="submit" value="Submit" >
+  </section>
 
     <script src="../contact/contact.js"></script>
 </body>

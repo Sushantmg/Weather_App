@@ -1,42 +1,106 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Poppins', sans-serif;
-    box-sizing: border-box;
-}
 :root{
     
-    --primary-color: #e5e5e5;
-    --secondary-color: rgb(255, 252, 252);
-    --primary-font: #3E6680;
-    --border-radius: 10px;
-    --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --primary-color: #8c52ff;
+  --secondary-color: rgb(255, 252, 252);
+  --primary-font: #3E6680;
+  --border-radius: 15px;
+  --box-shadow:rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+} 
+body{
+  display: flex;
+  background-color: var(--primary-color);
+  font-family: 'poopins',sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  width:100vw;
+  margin: 0;
 }
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-color);
-    padding: 1rem 2rem;
-    box-shadow: var(--box-shadow);
-    
-  }
-  
-  
-  .nav-links {
-    display: flex;
-    gap: 5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #4b5563;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  .nav-links a:hover {
-    color: #2563eb;
-  }
-  
+
+.container{
+  display: flex;
+ 
+
+}
+.navbar{
+  width: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  height: 85vh;
+  top: 0;
+}
+.nav-items {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 70px;
+ height: 100vh;
+
+}
+.nav-items li
+{
+  list-style: none;
+}
+.nav-items li a
+{
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding:0.5rem;
+  border-radius: var(--border-radius);
+
+
+}
+.nav-items li a:hover{
+  background-color: rgba( 255,  255, 255, 0.3);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+.form-section {
+  max-width: 300px;
+  padding-bottom: 10rem;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+#contact{
+  color: white;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  font-size: larger;
+  font-weight: bolder;
+}
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+}
+#error-div {
+  color: red;
+  display: block;
+  margin-top: 10px;
+}
