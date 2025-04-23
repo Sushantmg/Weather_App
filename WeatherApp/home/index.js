@@ -42,6 +42,7 @@ function getWeather() {
         },
         error: function(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
+            weatherInfoDiv.innerHTML = `<p>Failed to get location. Try again later.</p>`;
         }
     });
 }

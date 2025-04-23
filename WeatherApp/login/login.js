@@ -1,15 +1,15 @@
 
 const username = document.getElementById("username");
-const email = document.getElementById("email");
+
 const password = document.getElementById("password");
 
 async function formsubmit() {
   
   const usernameval = username.value.trim();
-  const emailval = email.value.trim();
+  
   const passwordval = password.value.trim();
 
-  if ( !usernameval || !emailval || !passwordval) {
+  if ( !usernameval || !passwordval) {
     setError("Please fill in all fields.");
     return;
   }
@@ -17,12 +17,12 @@ async function formsubmit() {
   const payload = {
     id: 0,
     username: usernameval,
-    email: emailval,
+  
     password: passwordval
   };
 console.log(payload)
   try {
-    const res = await fetch('https://fakestoreapi.com/users', {
+    const res = await fetch('https://fakestoreapi.com/auth/login', {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {
