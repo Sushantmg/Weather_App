@@ -15,7 +15,7 @@ async function formsubmit() {
   }
 
   const payload = {
-    id: 0,
+  
     username: usernameval,
   
     password: passwordval
